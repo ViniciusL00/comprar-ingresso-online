@@ -3,7 +3,7 @@
 
 1. <h2 align="center"> Recuperando elementos do formulário. </h2>
 
-* *Objetivo:* Função de Compra.
+* Objetivo:* Função de Compra.
 
 * Vamos criar uma função chamada comprar para processar os dados de um formulário de compra. Vamos recuperar os elementos do formulário, que são os campos para o tipo de ingresso e a quantidade, e exibir esses dados em alertas para verificar se estão corretos.
 
@@ -18,75 +18,83 @@
 **Código:**
 
 ```function comprar() {```
-```    let tipo = document.getElementById('tipo-ingresso');```
+```let tipo = document.getElementById('tipo-ingresso');```
 
-```    let quantidade = document.getElementById('qtd');```
+```let quantidade = document.getElementById('qtd');```
 
-```    alert(tipo.value);```
+```alert(tipo.value);```
 
-```    alert(quantidade.value)};```
+```alert(quantidade.value)};```
 
-2. <h2 align="center"> Usando condicionais para realizar a compra dos ingresso da pista </h2>
+**Explicação:**
+
+1. aqui usamos document.getElementById('tipo-ingresso'): Aqui, estamos pegando o elemento HTML com o id tipo-ingresso. Esse campo deve ser um <select> ou outro tipo de entrada que permita ao usuário escolher o tipo de ingresso. O 
+ .value pega o valor selecionado.
+
+2. document.getElementById('qtd'): Similar ao código acima, estamos pegando o valor do campo de quantidade (um campo de entrada numérica, por exemplo).
+
+3. alert(tipo.value) e alert(quantidade.value): Esses comandos exibem o valor de cada campo em um alerta para o usuário, permitindo verificar se as informações estão corretas.
+
+<h2 align="center"> Usando condicionais para realizar a compra dos ingresso da pista. </h2>
 
 * O código verifica a disponibilidade de ingressos de diferentes tipos e permite ao usuário selecionar a quantidade de ingressos desejada. Caso a quantidade de ingressos disponível seja insuficiente, o sistema informa o usuário e impede a compra.
 
 **Código:**
 
-* 1. Função comprar()
+* Função comprar()
 
 ```function comprar() {```
 
-```    // Recupera o valor selecionado no campo 'tipo-ingresso'```
+```// Recupera o valor selecionado no campo 'tipo-ingresso'```
 
-```    let tipo = document.getElementById('tipo-ingresso');```
+```let tipo = document.getElementById('tipo-ingresso');```
 
-```    // Recupera o valor preenchido no campo 'qtd'```
+```// Recupera o valor preenchido no campo 'qtd'```
 
-```    let qtd = parseInt(document.getElementById('qtd').value);```
+```let qtd = parseInt(document.getElementById('qtd').value);```
 
-```    if (tipo.value == 'pista') {```
+```if (tipo.value == 'pista') {```
 
-```        comprarPista(qtd);```
-
-```    }```
+```comprarPista(qtd);```
+```}```
 
 ```}```
 
 **Explicação:**
 
-* Esta função é chamada quando o usuário tenta realizar a compra. Ela realiza as seguintes operações:
+1. Esta função é chamada quando o usuário tenta realizar a compra. Ela realiza as seguintes operações:
 
-* Recupera o tipo de ingresso selecionado pelo usuário.
+2. Recupera o tipo de ingresso selecionado pelo usuário.
 
-* Recupera a quantidade de ingressos solicitada.
+3. Recupera a quantidade de ingressos solicitada.
 
-* 2. Se o tipo de ingresso for 'pista', chama a função comprarPista() para tratar a compra.
+* Se o tipo de ingresso for 'pista', chama a função comprarPista() para tratar a compra.
 
 **Código:**
 
 ```function comprarPista(qtd) {```
 
-```    let qtdPista = parseInt(document.getElementById('qtd-pista').textContent);```
+```let qtdPista = parseInt(document.getElementById('qtd-pista').textContent);```
 
-```    if (qtd > qtdPista) {```
+```if (qtd > qtdPista) {```
 
-```        alert('Não foi possível realizar a compra, quantidade indisponível para compra.');```
+```alert('Não foi possível realizar a compra, quantidade indisponível para compra.');```
 
-```    } else {```
+```} else {```
 
-```        qtdPista = qtdPista - qtd;```
+```qtdPista = qtdPista - qtd;```
 
-```        document.getElementById('qtd-pista').textContent = qtdPista;```
+```document.getElementById('qtd-pista').textContent = qtdPista;```
 
-```        alert('Compra realizada com sucesso!');```
+```alert('Compra realizada com sucesso!');```
 
-```    }```
+```}```
 
 ```}```
 
 * Esta função trata a compra do tipo de ingresso 'pista'. Ela faz a verificação da disponibilidade de ingressos e atualiza a quantidade de ingressos disponíveis. Se a quantidade solicitada for maior que a quantidade disponível, um alerta de erro é exibido.
 
-* *Como funciona:*
+**Como funciona:**
 
 * 1. O usuário seleciona o tipo de ingresso desejado no campo 'tipo-ingresso'.
 
@@ -100,7 +108,7 @@
 
 * 6. Caso contrário, a quantidade de ingressos disponíveis é atualizada e a compra é realizada com sucesso, com um alerta de confirmação.
 
-3. <h2 align="center"> Realizando a compra para outros tipos de ingresso. </h2>
+<h2 align="center"> Realizando a compra para outros tipos de ingresso. </h2>
 
 * Agora, a função comprar() verifica qual tipo de ingresso foi selecionado e chama a função correspondente para cada tipo de ingresso: comprarPista(), comprarSuperior() ou comprarInferior().
 
@@ -108,27 +116,27 @@
 
 ```function comprar() {```
 
-```    // Recupera o valor selecionado no campo 'tipo-ingresso'```
+```// Recupera o valor selecionado no campo 'tipo-ingresso'```
 
-```    let tipo = document.getElementById('tipo-ingresso');```
+```let tipo = document.getElementById('tipo-ingresso');```
 
-```    // Recupera o valor preenchido no campo 'qtd'```
+```// Recupera o valor preenchido no campo 'qtd'```
 
-```    let qtd = parseInt(document.getElementById('qtd').value);```
+```let qtd = parseInt(document.getElementById('qtd').value);```
 
-```    if (tipo.value == 'pista') {```
+```if (tipo.value == 'pista') {```
 
-```        comprarPista(qtd);```
+```comprarPista(qtd);```
 
-```    } else if (tipo.value == 'superior') {```
+```} else if (tipo.value == 'superior') {```
 
-```        comprarSuperior(qtd);```
+```comprarSuperior(qtd);```
 
-```    } else {```
+```} else {```
 
-```        comprarInferior(qtd);```
+```comprarInferior(qtd);```
 
-```    }```
+```}```
 
 ```}```
 
@@ -140,21 +148,21 @@
 
 ```function comprarPista(qtd) {```
 
-```    let qtdPista = parseInt(document.getElementById('qtd-pista').textContent);```
+```let qtdPista = parseInt(document.getElementById('qtd-pista').textContent);```
 
-```    if (qtd > qtdPista) {```
+```if (qtd > qtdPista) {```
 
-```        alert('Não foi possível realizar a compra, quantidade indisponível!');```
+```alert('Não foi possível realizar a compra, quantidade indisponível!');```
 
-```    } else {```
+```} else {```
 
-```        qtdPista = qtdPista - qtd;```
+```qtdPista = qtdPista - qtd;```
 
-```        document.getElementById('qtd-pista').textContent = qtdPista;```
+```document.getElementById('qtd-pista').textContent = qtdPista;```
 
-```        alert('Compra realizada com sucesso!');```
+```alert('Compra realizada com sucesso!');```
 
-```    }```
+```}```
 
 ```}```
 
@@ -166,21 +174,21 @@
 
 ```function comprarSuperior(qtd) {```
 
-```    let qtdSuperior = parseInt(document.getElementById('qtd-superior').textContent);```
+```let qtdSuperior = parseInt(document.getElementById('qtd-superior').textContent);```
 
-```    if (qtd > qtdSuperior) {```
+```if (qtd > qtdSuperior) {```
 
-```        alert('Não foi possível realizar a compra, quantidade indisponível!');```
+```alert('Não foi possível realizar a compra, quantidade indisponível!');```
 
-```    } else {```
+```} else {```
 
-```        qtdSuperior = qtdSuperior - qtd;```
+```qtdSuperior = qtdSuperior - qtd;```
 
-```        document.getElementById('qtd-superior').textContent = qtdSuperior;```
+```document.getElementById('qtd-superior').textContent = qtdSuperior;```
 
-```        alert('Compra realizada com sucesso!');```
+```alert('Compra realizada com sucesso!');```
 
-```    }```
+```}```
 
 ```}```
 
@@ -192,21 +200,21 @@
 
 ```function comprarInferior(qtd) {```
 
-```    let qtdInferior = parseInt(document.getElementById('qtd-inferior').textContent);```
+```let qtdInferior = parseInt(document.getElementById('qtd-inferior').textContent);```
 
-```    if (qtd > qtdInferior) {```
+```if (qtd > qtdInferior) {```
 
-```        alert('Não foi possível realizar a compra, quantidade indisponível!');```
+```alert('Não foi possível realizar a compra, quantidade indisponível!');```
 
-```    } else {```
+```} else {```
 
-```        qtdInferior = qtdInferior - qtd;```
+```qtdInferior = qtdInferior - qtd;```
 
-```        document.getElementById('qtd-inferior').textContent = qtdInferior;```
+```document.getElementById('qtd-inferior').textContent = qtdInferior;```
 
-```        alert('Compra realizada com sucesso!');```
+```alert('Compra realizada com sucesso!');```
 
-```    }```
+```}```
 
 ```}```
 
@@ -258,13 +266,15 @@
 
 **Código adicional para o desafio:**
 
-```    if (isNaN(qtd) || qtd <= 0) {```
+```// Verifica se a quantidade é um número positivo```
 
-```        alert('Por favor, insira uma quantidade válida e positiva.');```
+```if (isNaN(qtd) || qtd <= 0) {```
 
-```        return; // Impede a execução do resto da função se a quantidade for inválida```
+```alert('Por favor, insira uma quantidade válida e positiva.');```
 
-```    }```
+```return; // Impede a execução do resto da função se a quantidade for inválida```
+
+```}```
 
 * *Verificação de quantidade válida:* Após capturar o valor da quantidade (qtd), foi adicionada uma verificação para garantir que o valor seja um número positivo.
 
