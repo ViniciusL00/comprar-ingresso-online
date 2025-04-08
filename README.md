@@ -18,6 +18,7 @@ Exibir Alertas: Vamos usar alert para mostrar os valores preenchidos nos campos 
 **Código:**
 
 ```function comprar() {```
+
 ```let tipo = document.getElementById('tipo-ingresso');```
 
 ```let quantidade = document.getElementById('qtd');```
@@ -30,6 +31,17 @@ Exibir Alertas: Vamos usar alert para mostrar os valores preenchidos nos campos 
 
 aqui usamos document.getElementById('tipo-ingresso'): Aqui, estamos pegando o elemento HTML com o id tipo-ingresso. Esse campo deve ser um <select> ou outro tipo de entrada que permita ao usuário escolher o tipo de ingresso. O 
  .value pega o valor selecionado.
+
+
+
+
+
+
+
+
+
+
+ 
 
 document.getElementById('qtd'): Similar ao código acima, estamos pegando o valor do campo de quantidade (um campo de entrada numérica, por exemplo).
 
