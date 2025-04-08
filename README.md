@@ -32,7 +32,9 @@
 
 * document.getElementById('qtd'): Similar ao código acima, estamos pegando o valor do campo de quantidade (um campo de entrada numérica, por exemplo).
 
-* alert(tipo.value) e alert(quantidade.value): Esses comandos exibem o valor de cada campo em um alerta para o usuário, permitindo verificar se as informações estão corret<h2 align="center"> Usando condicionais para realizar a compra dos ingresso da pista </h2>
+* alert(tipo.value) e alert(quantidade.value): Esses comandos exibem o valor de cada campo em um alerta para o usuário, permitindo verificar se as informações estão correta.
+
+<h2 align="center"> Usando condicionais para realizar a compra dos ingresso da pista </h2>
 
 * O código verifica a disponibilidade de ingressos de diferentes tipos e permite ao usuário selecionar a quantidade de ingressos desejada. Caso a quantidade de ingressos disponível seja insuficiente, o sistema informa o usuário e impede a compra.
 
