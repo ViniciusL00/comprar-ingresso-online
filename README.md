@@ -27,7 +27,7 @@
 
 ```alert(quantidade.value)};```
 
-**Explicação:**
+* Explicando o código:
 
 1.  aqui usamos `document.getElementById('tipo-ingresso')` Aqui, estamos pegando o elemento HTML com o id tipo-ingresso. Esse campo deve ser um <select> ou outro tipo de entrada que permita ao usuário escolher o tipo de ingresso. O `.value pega o valor selecionado.`.
 
