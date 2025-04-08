@@ -43,7 +43,7 @@ alert(tipo.value) e alert(quantidade.value): Esses comandos exibem o valor de ca
 
 * Função comprar()
 
-```function comprar() {```
+``function comprar() {``
 
 ```// Recupera o valor selecionado no campo 'tipo-ingresso'```
 
