@@ -1,4 +1,4 @@
-# projeto-ingresso
+# projeto-compra-de-ingresso-online
 <h1 align="center"> Sistema de Compra de Ingressos </h1>
 
 1. <h2 align="center"> Recuperando elementos do formulário. </h2>
