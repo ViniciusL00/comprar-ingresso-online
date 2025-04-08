@@ -3,7 +3,7 @@
 
 1. <h2 align="center"> Recuperando elementos do formulário. </h2>
 
-* *Objetivo:* Função de Compra.
+* Objetivo:* Função de Compra.
 
 * Vamos criar uma função chamada comprar para processar os dados de um formulário de compra. Vamos recuperar os elementos do formulário, que são os campos para o tipo de ingresso e a quantidade, e exibir esses dados em alertas para verificar se estão corretos.
 
@@ -26,21 +26,22 @@
 
 ```alert(quantidade.value)};```
 
+**Explicação:**
 
-* document.getElementById('tipo-ingresso'): Aqui, estamos pegando o elemento HTML com o id tipo-ingresso. Esse campo deve ser um <select> ou outro tipo de entrada que permita ao usuário escolher o tipo de ingresso. O 
+1. document.getElementById('tipo-ingresso'): Aqui, estamos pegando o elemento HTML com o id tipo-ingresso. Esse campo deve ser um <select> ou outro tipo de entrada que permita ao usuário escolher o tipo de ingresso. O 
  .value pega o valor selecionado.
 
-* document.getElementById('qtd'): Similar ao código acima, estamos pegando o valor do campo de quantidade (um campo de entrada numérica, por exemplo).
+2. document.getElementById('qtd'): Similar ao código acima, estamos pegando o valor do campo de quantidade (um campo de entrada numérica, por exemplo).
 
-* alert(tipo.value) e alert(quantidade.value): Esses comandos exibem o valor de cada campo em um alerta para o usuário, permitindo verificar se as informações estão corretas.
+3. alert(tipo.value) e alert(quantidade.value): Esses comandos exibem o valor de cada campo em um alerta para o usuário, permitindo verificar se as informações estão corretas.
 
-2. <h2 align="center"> Usando condicionais para realizar a compra dos ingresso da pista </h2>
+<h2 align="center"> Usando condicionais para realizar a compra dos ingresso da pista. </h2>
 
 * O código verifica a disponibilidade de ingressos de diferentes tipos e permite ao usuário selecionar a quantidade de ingressos desejada. Caso a quantidade de ingressos disponível seja insuficiente, o sistema informa o usuário e impede a compra.
 
 **Código:**
 
-* 1. Função comprar()
+* Função comprar()
 
 ```function comprar() {```
 
@@ -61,13 +62,13 @@
 
 **Explicação:**
 
-* Esta função é chamada quando o usuário tenta realizar a compra. Ela realiza as seguintes operações:
+1. Esta função é chamada quando o usuário tenta realizar a compra. Ela realiza as seguintes operações:
 
-* Recupera o tipo de ingresso selecionado pelo usuário.
+2. Recupera o tipo de ingresso selecionado pelo usuário.
 
-* Recupera a quantidade de ingressos solicitada.
+3. Recupera a quantidade de ingressos solicitada.
 
-* 2. Se o tipo de ingresso for 'pista', chama a função comprarPista() para tratar a compra.
+* Se o tipo de ingresso for 'pista', chama a função comprarPista() para tratar a compra.
 
 **Código:**
 
@@ -93,7 +94,7 @@
 
 * Esta função trata a compra do tipo de ingresso 'pista'. Ela faz a verificação da disponibilidade de ingressos e atualiza a quantidade de ingressos disponíveis. Se a quantidade solicitada for maior que a quantidade disponível, um alerta de erro é exibido.
 
-* *Como funciona:*
+**Como funciona:**
 
 * 1. O usuário seleciona o tipo de ingresso desejado no campo 'tipo-ingresso'.
 
@@ -107,7 +108,7 @@
 
 * 6. Caso contrário, a quantidade de ingressos disponíveis é atualizada e a compra é realizada com sucesso, com um alerta de confirmação.
 
-3. <h2 align="center"> Realizando a compra para outros tipos de ingresso. </h2>
+<h2 align="center"> Realizando a compra para outros tipos de ingresso. </h2>
 
 * Agora, a função comprar() verifica qual tipo de ingresso foi selecionado e chama a função correspondente para cada tipo de ingresso: comprarPista(), comprarSuperior() ou comprarInferior().
 
