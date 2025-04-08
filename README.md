@@ -18,17 +18,14 @@
 **Código:**
 
 ```function comprar() {```
-```    let tipo = document.getElementById('tipo-ingresso');```
+```let tipo = document.getElementById('tipo-ingresso');```
 
-```    let quantidade = document.getElementById('qtd');```
+```let quantidade = document.getElementById('qtd');```
 
-```    alert(tipo.value);```
+```alert(tipo.value);```
 
-```    alert(quantidade.value)};```
+```alert(quantidade.value)};```
 
-
-
-**Explicação:**
 
 * document.getElementById('tipo-ingresso'): Aqui, estamos pegando o elemento HTML com o id tipo-ingresso. Esse campo deve ser um <select> ou outro tipo de entrada que permita ao usuário escolher o tipo de ingresso. O .value pega o valor selecionado.
 
@@ -46,18 +43,18 @@
 
 ```function comprar() {```
 
-```    // Recupera o valor selecionado no campo 'tipo-ingresso'```
+```// Recupera o valor selecionado no campo 'tipo-ingresso'```
 
-```    let tipo = document.getElementById('tipo-ingresso');```
+```let tipo = document.getElementById('tipo-ingresso');```
 
-```    // Recupera o valor preenchido no campo 'qtd'```
+```// Recupera o valor preenchido no campo 'qtd'```
 
-```    let qtd = parseInt(document.getElementById('qtd').value);```
+```let qtd = parseInt(document.getElementById('qtd').value);```
 
-```    if (tipo.value == 'pista') {```
+```if (tipo.value == 'pista') {```
 
-```        comprarPista(qtd);```
-```    }```
+```comprarPista(qtd);```
+```}```
 
 ```}```
 
@@ -75,20 +72,21 @@
 
 ```function comprarPista(qtd) {```
 
-```    let qtdPista = parseInt(document.getElementById('qtd-pista').textContent);```
+```let qtdPista = parseInt(document.getElementById('qtd-pista').textContent);```
 
-```    if (qtd > qtdPista) {```
+```if (qtd > qtdPista) {```
 
-```        alert('Não foi possível realizar a compra, quantidade indisponível para compra.');```
+```alert('Não foi possível realizar a compra, quantidade indisponível para compra.');```
 
-```    } else {```
-```        qtdPista = qtdPista - qtd;```
+```} else {```
 
-```        document.getElementById('qtd-pista').textContent = qtdPista;```
+```qtdPista = qtdPista - qtd;```
 
-```        alert('Compra realizada com sucesso!');```
+```document.getElementById('qtd-pista').textContent = qtdPista;```
 
-```    }```
+```alert('Compra realizada com sucesso!');```
+
+```}```
 
 ```}```
 
@@ -116,27 +114,27 @@
 
 ```function comprar() {```
 
-```    // Recupera o valor selecionado no campo 'tipo-ingresso'```
+```// Recupera o valor selecionado no campo 'tipo-ingresso'```
 
-```    let tipo = document.getElementById('tipo-ingresso');```
+```let tipo = document.getElementById('tipo-ingresso');```
 
-```    // Recupera o valor preenchido no campo 'qtd'```
+```// Recupera o valor preenchido no campo 'qtd'```
 
-```    let qtd = parseInt(document.getElementById('qtd').value);```
+```let qtd = parseInt(document.getElementById('qtd').value);```
 
-```    if (tipo.value == 'pista') {```
+```if (tipo.value == 'pista') {```
 
-```        comprarPista(qtd);```
+```comprarPista(qtd);```
 
-```    } else if (tipo.value == 'superior') {```
+```} else if (tipo.value == 'superior') {```
 
-```        comprarSuperior(qtd);```
+```comprarSuperior(qtd);```
 
-```    } else {```
+```} else {```
 
-```        comprarInferior(qtd);```
+```comprarInferior(qtd);```
 
-```    }```
+```}```
 
 ```}```
 
@@ -148,21 +146,21 @@
 
 ```function comprarPista(qtd) {```
 
-```    let qtdPista = parseInt(document.getElementById('qtd-pista').textContent);```
+```let qtdPista = parseInt(document.getElementById('qtd-pista').textContent);```
 
-```    if (qtd > qtdPista) {```
+```if (qtd > qtdPista) {```
 
-```        alert('Não foi possível realizar a compra, quantidade indisponível!');```
+```alert('Não foi possível realizar a compra, quantidade indisponível!');```
 
-```    } else {```
+```} else {```
 
-```        qtdPista = qtdPista - qtd;```
+```qtdPista = qtdPista - qtd;```
 
-```        document.getElementById('qtd-pista').textContent = qtdPista;```
+```document.getElementById('qtd-pista').textContent = qtdPista;```
 
-```        alert('Compra realizada com sucesso!');```
+```alert('Compra realizada com sucesso!');```
 
-```    }```
+```}```
 
 ```}```
 
@@ -174,20 +172,21 @@
 
 ```function comprarSuperior(qtd) {```
 
-```    let qtdSuperior = parseInt(document.getElementById('qtd-superior').textContent);```
+```let qtdSuperior = parseInt(document.getElementById('qtd-superior').textContent);```
 
-```    if (qtd > qtdSuperior) {```
+```if (qtd > qtdSuperior) {```
 
-```        alert('Não foi possível realizar a compra, quantidade indisponível!');```
-```    } else {```
+```alert('Não foi possível realizar a compra, quantidade indisponível!');```
 
-```        qtdSuperior = qtdSuperior - qtd;```
+```} else {```
 
-```        document.getElementById('qtd-superior').textContent = qtdSuperior;```
+```qtdSuperior = qtdSuperior - qtd;```
 
-```        alert('Compra realizada com sucesso!');```
+```document.getElementById('qtd-superior').textContent = qtdSuperior;```
 
-```    }```
+```alert('Compra realizada com sucesso!');```
+
+```}```
 
 ```}```
 
@@ -199,21 +198,21 @@
 
 ```function comprarInferior(qtd) {```
 
-```    let qtdInferior = parseInt(document.getElementById('qtd-inferior').textContent);```
+```let qtdInferior = parseInt(document.getElementById('qtd-inferior').textContent);```
 
-```    if (qtd > qtdInferior) {```
+```if (qtd > qtdInferior) {```
 
-```        alert('Não foi possível realizar a compra, quantidade indisponível!');```
+```alert('Não foi possível realizar a compra, quantidade indisponível!');```
 
-```    } else {```
+```} else {```
 
-```        qtdInferior = qtdInferior - qtd;```
+```qtdInferior = qtdInferior - qtd;```
 
-```        document.getElementById('qtd-inferior').textContent = qtdInferior;```
+```document.getElementById('qtd-inferior').textContent = qtdInferior;```
 
-```        alert('Compra realizada com sucesso!');```
+```alert('Compra realizada com sucesso!');```
 
-```    }```
+```}```
 
 ```}```
 
@@ -267,13 +266,13 @@
 
 ```// Verifica se a quantidade é um número positivo```
 
-```    if (isNaN(qtd) || qtd <= 0) {```
+```if (isNaN(qtd) || qtd <= 0) {```
 
-```        alert('Por favor, insira uma quantidade válida e positiva.');```
+```alert('Por favor, insira uma quantidade válida e positiva.');```
 
-```        return; // Impede a execução do resto da função se a quantidade for inválida```
+```return; // Impede a execução do resto da função se a quantidade for inválida```
 
-```    }```
+```}```
 
 * *Verificação de quantidade válida:* Após capturar o valor da quantidade (qtd), foi adicionada uma verificação para garantir que o valor seja um número positivo.
 
