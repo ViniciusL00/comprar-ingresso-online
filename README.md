@@ -27,7 +27,7 @@
 
 ```alert(quantidade.value)};```
 
-<h2 align="center"> Usando condicionais para realizar a compra dos ingresso da pista. </h2>
+<h2 align="center">2. Usando condicionais para realizar a compra dos ingresso da pista. </h2>
 
 * O código verifica a disponibilidade de ingressos de diferentes tipos e permite ao usuário selecionar a quantidade de ingressos desejada. Caso a quantidade de ingressos disponível seja insuficiente, o sistema informa o usuário e impede a compra.
 
@@ -100,7 +100,7 @@
 
 * Caso contrário, a quantidade de ingressos disponíveis é atualizada e a compra é realizada com sucesso, com um alerta de confirmação.
 
-<h2 align="center">2. Realizando a compra para outros tipos de ingresso. </h2>
+<h2 align="center">3. Realizando a compra para outros tipos de ingresso. </h2>
 
 * Agora, a `função comprar()` verifica qual tipo de ingresso foi selecionado e chama a função correspondente para cada tipo de ingresso: `comprarPista()`, `comprarSuperior()` ou `comprarInferior()`.
 
@@ -242,7 +242,7 @@ Este código implementa uma lógica para realizar compras de ingressos para um e
 
 * A quantidade de ingressos disponíveis para o tipo inferior é verificada `('qtd-inferior')`, e a compra é realizada ou um erro é exibido, dependendo da disponibilidade.
 
-<h3 align="center">3. Fluxo do código. </h3>
+<h3 align="center">4. Fluxo do código. </h3>
 
 * O usuário seleciona o tipo de ingresso e insere a quantidade desejada.
 
@@ -252,7 +252,7 @@ Este código implementa uma lógica para realizar compras de ingressos para um e
 
 * A quantidade de ingressos disponíveis é verificada. Se a quantidade solicitada for maior que a quantidade disponível, o usuário é informado de que não há ingressos suficientes. Caso contrário, a quantidade disponível é atualizada e a compra é confirmada com um alerta.
 
-<h4 align="center">4. Desafio. </h4>
+<h4 align="center">5. Desafio. </h4>
 
 * Adicione uma verificação para garantir que a quantidade inserida pelo usuário seja um número positivo. Se o valor não for válido, exiba uma mensagem de erro adequada.
 
