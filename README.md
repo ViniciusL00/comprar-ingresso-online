@@ -27,26 +27,6 @@ Exibir Alertas: Vamos usar alert para mostrar os valores preenchidos nos campos 
 
 ```alert(quantidade.value)};```
 
-**Explicação:**
-
-aqui usamos document.getElementById('tipo-ingresso'): Aqui, estamos pegando o elemento HTML com o id tipo-ingresso. Esse campo deve ser um <select> ou outro tipo de entrada que permita ao usuário escolher o tipo de ingresso. O 
- .value pega o valor selecionado.
-
-
-
-
-
-
-
-
-
-
- 
-
-document.getElementById('qtd'): Similar ao código acima, estamos pegando o valor do campo de quantidade (um campo de entrada numérica, por exemplo).
-
-alert(tipo.value) e alert(quantidade.value): Esses comandos exibem o valor de cada campo em um alerta para o usuário, permitindo verificar se as informações estão corretas.
-
 <h2 align="center"> Usando condicionais para realizar a compra dos ingresso da pista. </h2>
 
 * O código verifica a disponibilidade de ingressos de diferentes tipos e permite ao usuário selecionar a quantidade de ingressos desejada. Caso a quantidade de ingressos disponível seja insuficiente, o sistema informa o usuário e impede a compra.
