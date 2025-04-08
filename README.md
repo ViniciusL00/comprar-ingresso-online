@@ -27,7 +27,8 @@
 ```alert(quantidade.value)};```
 
 
-* document.getElementById('tipo-ingresso'): Aqui, estamos pegando o elemento HTML com o id tipo-ingresso. Esse campo deve ser um <select> ou outro tipo de entrada que permita ao usuário escolher o tipo de ingresso. O .value pega o valor selecionado.
+* document.getElementById('tipo-ingresso'): Aqui, estamos pegando o elemento HTML com o id tipo-ingresso. Esse campo deve ser um <select> ou outro tipo de entrada que permita ao usuário escolher o tipo de ingresso. O 
+ .value pega o valor selecionado.
 
 * document.getElementById('qtd'): Similar ao código acima, estamos pegando o valor do campo de quantidade (um campo de entrada numérica, por exemplo).
 
