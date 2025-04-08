@@ -3,7 +3,7 @@
 
 <h2 align="center">1. Recuperando elementos do formulário. </h2>
 
-* Objetivo:* Função de Compra.
+* Objetivo: Função de Compra.
 
 * Vamos criar uma função chamada comprar para processar os dados de um formulário de compra. Vamos recuperar os elementos do formulário, que são os campos para o tipo de ingresso e a quantidade, e exibir esses dados em alertas para verificar se estão corretos.
 
