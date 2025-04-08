@@ -29,11 +29,6 @@
 
 * Explicando o código:
 
-1.  aqui usamos `document.getElementById('tipo-ingresso')` Aqui, estamos pegando o elemento HTML com o id tipo-ingresso. Esse campo deve ser um <select> ou outro tipo de entrada que permita ao usuário escolher o tipo de ingresso. O `.value pega o valor selecionado.`.
-
-2.  `document.getElementById('qtd')` Similar ao código acima, estamos pegando o valor do campo de quantidade (um campo de entrada numérica, por exemplo).
-
-3.  `alert(tipo.value)` e `alert(quantidade.value)` Esses comandos exibem o valor de cada campo em um alerta para o usuário, permitindo verificar se as informações estão corretas.
 
 <h2 align="center"> Usando condicionais para realizar a compra dos ingresso da pista. </h2>
 
