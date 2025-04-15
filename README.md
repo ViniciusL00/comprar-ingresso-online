@@ -254,7 +254,7 @@ Este código implementa uma lógica para realizar compras de ingressos para um e
 
 <h4 align="center">5. Desafios. </h4>
 
-* 1. Adicione uma verificação para garantir que a quantidade inserida pelo usuário seja um número positivo. Se o valor não for válido, exiba uma mensagem de erro adequada.
+1. Adicione uma verificação para garantir que a quantidade inserida pelo usuário seja um número positivo. Se o valor não for válido, exiba uma mensagem de erro adequada.
 
 **Código adicional para o desafio:**
 
@@ -273,7 +273,7 @@ Verificação de quantidade válida: Após capturar o valor da quantidade (qtd),
 Se o valor não for um número `(isNaN(qtd))` ou for menor ou igual a zero `(qtd <= 0),` exibe uma mensagem de erro `(alert)` e impede a execução da `função comprar()` usando `return`.
 
 
-* 2. Crie uma função que aceite uma string como parâmetro, utilize a função parseInt para converter essa string em um número inteiro e retorne o resultado.
+2. Crie uma função que aceite uma string como parâmetro, utilize a função parseInt para converter essa string em um número inteiro e retorne o resultado.
 
 
 ```function converterString(str) {```
@@ -287,7 +287,7 @@ Se o valor não for um número `(isNaN(qtd))` ou for menor ou igual a zero `(qtd
 
 ```console.log(converterString('13'));```
 
-* 3. Escreva um programa de calculadora simples com funções separadas para adição, subtração, multiplicação e divisão. Utilize um bloco condicional para determinar qual função executar com base em uma variável que representa a operação desejada.
+3. Escreva um programa de calculadora simples com funções separadas para adição, subtração, multiplicação e divisão. Utilize um bloco condicional para determinar qual função executar com base em uma variável que representa a operação desejada.
 
 ```// Funções para cada operação```
 
@@ -365,7 +365,7 @@ Se o valor não for um número `(isNaN(qtd))` ou for menor ou igual a zero `(qtd
 
 ```console.log(calculadora(28, 13, '%'));```
 
-* 4. Implemente uma função que aceite um número como parâmetro e utilize um bloco condicional para determinar se o número é par ou ímpar.
+4. Implemente uma função que aceite um número como parâmetro e utilize um bloco condicional para determinar se o número é par ou ímpar.
 
 ```function parOuImpar(numero) {```
 
@@ -385,7 +385,7 @@ Se o valor não for um número `(isNaN(qtd))` ou for menor ou igual a zero `(qtd
 
 ```console.log(parOuImpar(9));```
 
-* 5. Crie uma função que converta a temperatura de Celsius para Fahrenheit e vice-versa. Utilize uma variável para indicar a escala desejada e um bloco condicional para determinar qual conversão realizar
+5. Crie uma função que converta a temperatura de Celsius para Fahrenheit e vice-versa. Utilize uma variável para indicar a escala desejada e um bloco condicional para determinar qual conversão realizar
 
 ```function converterTemperatura(temperatura, escala) {```
 
