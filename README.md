@@ -252,9 +252,9 @@ Este código implementa uma lógica para realizar compras de ingressos para um e
 
 * A quantidade de ingressos disponíveis é verificada. Se a quantidade solicitada for maior que a quantidade disponível, o usuário é informado de que não há ingressos suficientes. Caso contrário, a quantidade disponível é atualizada e a compra é confirmada com um alerta.
 
-<h4 align="center">5. Desafio. </h4>
+<h4 align="center">5. Desafios. </h4>
 
-* Adicione uma verificação para garantir que a quantidade inserida pelo usuário seja um número positivo. Se o valor não for válido, exiba uma mensagem de erro adequada.
+* 1. Adicione uma verificação para garantir que a quantidade inserida pelo usuário seja um número positivo. Se o valor não for válido, exiba uma mensagem de erro adequada.
 
 **Código adicional para o desafio:**
 
@@ -271,3 +271,152 @@ Este código implementa uma lógica para realizar compras de ingressos para um e
 Verificação de quantidade válida: Após capturar o valor da quantidade (qtd), foi adicionada uma verificação para garantir que o valor seja um número positivo.
 
 Se o valor não for um número `(isNaN(qtd))` ou for menor ou igual a zero `(qtd <= 0),` exibe uma mensagem de erro `(alert)` e impede a execução da `função comprar()` usando `return`.
+
+
+* 2. Crie uma função que aceite uma string como parâmetro, utilize a função parseInt para converter essa string em um número inteiro e retorne o resultado.
+
+
+```function converterString(str) {```
+
+```    // Usa parseInt para converter a string em número inteiro```
+
+```    const numero = parseInt(str);```
+
+```    return numero;```
+```}```
+
+```console.log(converterString('13'));```
+
+* 3. Escreva um programa de calculadora simples com funções separadas para adição, subtração, multiplicação e divisão. Utilize um bloco condicional para determinar qual função executar com base em uma variável que representa a operação desejada.
+
+```// Funções para cada operação```
+
+```function adicionar(a, b) {```
+
+```    return a + b;```
+
+```}```
+
+```function subtrair(c, d) {```
+
+``` return c - d;```
+
+```}```
+
+```function multiplicar(e, f) {```
+
+```    return e * f;```
+
+```}```
+
+```function dividir(g, h) {```
+
+```    if(h === 0) {```
+
+```        return 'Erro: divisão por zero!';```
+
+```    }```
+
+```    return g / h;```
+
+```}```
+
+```function calculadora(num1, num2, operador) {```
+
+```    let resultado;```
+
+```    // Bloco condicional com if...else```
+
+```if (operador === '+') {```
+
+```   resultado = adicionar(num1, num2);```
+
+```} else if (operador === '-') {```
+
+```    resultado = subtrair(num1, num2);```
+
+```} else if (operador === '*') {```
+
+```    resultado = multiplicar(num1, num2);```
+
+```} else if (operador === '/') {```
+
+```    resultado = dividir(num1, num2);```
+    
+```} else {```
+
+```    resultado = 'Operação inválida!';```
+
+```}```
+
+```return resultado;```
+
+```}```
+
+```console.log(calculadora(28, 13, '+'));```
+
+```console.log(calculadora(28, 13, '-'));```
+
+```console.log(calculadora(13, 7, '*'));```
+
+```console.log(calculadora(28, 4, '/'));```
+
+```console.log(calculadora(28, 0, '/'));```
+
+```console.log(calculadora(28, 13, '%'));```
+
+* 4. Implemente uma função que aceite um número como parâmetro e utilize um bloco condicional para determinar se o número é par ou ímpar.
+
+```function parOuImpar(numero) {```
+
+```    if (numero % 2 === 0) {```
+
+```        return `O número ${numero} é par.`; ```
+
+```    } else {```
+
+```        return `O número ${numero} é ímpar.`; ```
+
+```    }```
+
+```}```
+
+```console.log(parOuImpar(6));```
+
+```console.log(parOuImpar(9));```
+
+* 5. Crie uma função que converta a temperatura de Celsius para Fahrenheit e vice-versa. Utilize uma variável para indicar a escala desejada e um bloco condicional para determinar qual conversão realizar
+
+```function converterTemperatura(temperatura, escala) {```
+
+```    let resultado;```
+    
+```    if (escala === 'F') {```
+
+```       // Celsius para Fahrenheit```
+
+```        resultado = (temperatura * 9/5) + 32;```
+        
+```        return `${temperatura} ºC é igual a ${resultado.toFixed(2)}ºF`;```
+
+```    } else if (escala === 'C') {```
+
+```        // Fahrenheit para Celsius```
+
+```        resultado = (temperatura - 32) * 5/9;```
+
+```        return `${temperatura}ºF é igual a ${resultado.toFixed(2)}ºC`;```
+
+```    } else {```
+
+```        return 'Escala inválida. Use "C" para Celcius ou "F" para Fahrenheit.'```
+
+```    }```
+    
+```}```
+
+```console.log(converterTemperatura(25, "F")); // 25°C é igual a 77.00°F```
+
+```console.log(converterTemperatura(77, "C")); // 77°F é igual a 25.00°C```
+
+```console.log(converterTemperatura(30, "X")); // Escala inválida...```
